@@ -1,17 +1,18 @@
 FactoryGirl.define do
 
-  scumbag_names = ['Tom Cotton',
-                   'Lindsey Graham',
-                   'Kelly Ayotte',
-                   'Rand Paul',
-                   'Claire McCaskill',
-                   'Harry Reid',
-                   'Marco Rubio',
-                   'Mitch McConnell',
-                   'Test_Scumbag_1',
-                   'Test_Scumbag_2',
-                   'Test_Scumbag_3']
-
+  scumbag_names = [
+    'Tom Cotton',
+    'Lindsey Graham',
+    'Kelly Ayotte',
+    'Rand Paul',
+    'Claire McCaskill',
+    'Harry Reid',
+    'Marco Rubio',
+    'Mitch McConnell',
+    'Test_Scumbag_1',
+    'Test_Scumbag_2',
+    'Test_Scumbag_3'
+  ]
 
   sequence :scumbag_name, scumbag_names.cycle do |n|
     "#{n}"
